@@ -1,0 +1,17 @@
+security:
+  oauth2:
+    client:
+      clientId: <client_id>
+      clientSecret: <client_secret>
+      accessTokenUri: https://www.googleapis.com/oauth2/v3/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+      clientAuthenticationScheme: form
+      tokenName: oauth_token
+      authenticationScheme: query
+      scope: profile email
+
+    resource:
+      userInfoUri: https://www.googleapis.com/userinfo/v2/me
+logging:
+  level:
+    root: DEBUG
